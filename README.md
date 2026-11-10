@@ -1,32 +1,14 @@
-# React + TypeScript + Vite
+# FE - Customer Module
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The frontend is a React, TypeScript, and Vite application organized by feature.
+Customer page shells and reusable component placeholders are grouped under
+`src/pages/customer`, `src/components`, and `src/features`. Routes are declared
+in `src/routes`.
 
-Currently, two official plugins are available:
+The page and component files currently return `null` intentionally. UI,
+business logic, mock data, and API integration are not part of this scaffold.
+The `services/api` and `services/endpoints` directories are reserved for later
+API integration.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Run the development server with `npm run dev`, check types and build with
+`npm run build`, and lint with `npm run lint`.
