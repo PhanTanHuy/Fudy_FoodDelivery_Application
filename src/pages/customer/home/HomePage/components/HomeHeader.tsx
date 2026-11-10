@@ -37,10 +37,11 @@ function HomeHeader({ search, onSearch }: HomeHeaderProps) {
         </label>
 
         <div className="header-actions">
-          <Link className="header-account" to="/profile">
+          <Link className="header-account" to="/login">
             <span className="account-avatar">A</span>
-            <span>Tài khoản</span>
+            <span>Đăng nhập</span>
           </Link>
+          <Link className="header-register" to="/register">Đăng ký</Link>
           <Link aria-label="Giỏ hàng" className="header-cart" to="/cart">
             <Icon name="bag" size={20} />
             <span>Giỏ hàng</span>

@@ -181,6 +181,26 @@
   white-space: nowrap;
 }
 
+.header-register {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  border: 1px solid #cfe7ed;
+  border-radius: 10px;
+  background: #edf8fa;
+  color: #347e94;
+  font-size: 11px;
+  font-weight: 720;
+  white-space: nowrap;
+}
+
+.header-register:hover {
+  border-color: #9dcbd7;
+  background: #e2f3f7;
+}
+
 .header-account:hover,
 .header-cart:hover {
   color: var(--blue-dark);
@@ -1046,6 +1066,15 @@
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.8);
     color: #477986;
+  }
+
+  .header-register {
+    min-height: 34px;
+    padding: 0 9px;
+    border-color: rgba(255, 255, 255, 0.8);
+    border-radius: 11px;
+    background: #fff;
+    font-size: 10px;
   }
 
   .account-avatar {
