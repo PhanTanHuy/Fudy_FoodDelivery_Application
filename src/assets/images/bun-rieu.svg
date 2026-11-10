@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="52" y1="24" x2="733" y2="430" gradientUnits="userSpaceOnUse"><stop stop-color="#D9F0EA"/><stop offset="1" stop-color="#F6D6B2"/></linearGradient>
+    <linearGradient id="soup" x1="240" y1="180" x2="564" y2="393" gradientUnits="userSpaceOnUse"><stop stop-color="#F39B55"/><stop offset="1" stop-color="#B84F32"/></linearGradient>
+    <linearGradient id="bowl" x1="184" y1="166" x2="602" y2="418" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFDF8"/><stop offset="1" stop-color="#D9E7E1"/></linearGradient>
+    <filter id="shadow" x="125" y="126" width="550" height="360" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="19"/></filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h800v440H0z"/>
+  <circle cx="92" cy="72" r="42" fill="#FFF9EC" fill-opacity=".52"/><circle cx="708" cy="357" r="76" fill="#E5B77E" fill-opacity=".23"/>
+  <ellipse cx="400" cy="339" fill="#49352C" fill-opacity=".18" rx="236" ry="62" filter="url(#shadow)"/>
+  <path fill="url(#bowl)" d="M166 203h468c-18 134-101 206-234 206s-216-72-234-206Z"/>
+  <ellipse cx="400" cy="205" fill="#E6D7BC" rx="238" ry="85"/><ellipse cx="400" cy="194" fill="url(#soup)" rx="214" ry="69"/>
+  <path stroke="#FFE5AA" stroke-linecap="round" stroke-width="13" d="M265 185c20-31 34 31 56 1s34 22 55-2 36 26 57 0 34 29 55 0 34 21 55 0 34 23 54-1"/>
+  <path fill="#FFF0CF" d="M256 208c25-26 56-23 74 1l-20 27-44-2-10-26Zm195-42c24-24 57-18 70 9l-22 26-46-3-2-32Z"/>
+  <path fill="#75A965" d="M473 177c15-35 42-49 61-28 4 22-8 43-34 59l-27-31Zm-245 20c-5-27 8-46 31-50 17 13 22 33 12 60l-43-10Zm174 30c13-34 38-47 60-27 3 22-10 42-36 57l-24-30Zm126-7c5-23 21-34 41-24 7 19 0 36-19 49l-22-25Z"/>
+  <path fill="#D75D42" d="M352 183c20-23 47-22 61 2-1 20-16 34-40 41l-21-43Zm71 43c22-17 43-11 49 12-6 18-21 27-44 25l-5-37Z"/>
+  <circle cx="305" cy="174" r="10" fill="#F8D56A"/><circle cx="533" cy="196" r="9" fill="#F8D56A"/>
+</svg>

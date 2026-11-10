@@ -1,0 +1,155 @@
+import bunRieuImage from '../assets/images/bun-rieu.svg'
+import coffeeImage from '../assets/images/coffee.svg'
+import friedChickenImage from '../assets/images/fried-chicken.svg'
+import milkTeaImage from '../assets/images/milk-tea.svg'
+import pizzaImage from '../assets/images/pizza.svg'
+import riceBowlImage from '../assets/images/rice-bowl.svg'
+import type { FoodCategory, HomeFeed, PopularFood, Restaurant } from '../types/home'
+
+export const foodCategories: FoodCategory[] = [
+  { id: 'chicken', name: 'Gà rán', emoji: '🍗', color: '#fff0e8' },
+  { id: 'milk-tea', name: 'Trà sữa', emoji: '🧋', color: '#fff1f4' },
+  { id: 'coffee', name: 'Cà phê', emoji: '☕', color: '#fff4df' },
+  { id: 'noodles', name: 'Bún & mì', emoji: '🍜', color: '#e9f5ff' },
+  { id: 'rice', name: 'Cơm ngon', emoji: '🍚', color: '#fff6db' },
+  { id: 'pizza', name: 'Pizza', emoji: '🍕', color: '#fff0e5' },
+  { id: 'dessert', name: 'Tráng miệng', emoji: '🍰', color: '#f9edff' },
+  { id: 'healthy', name: 'Ăn healthy', emoji: '🥗', color: '#e8f7ed' },
+]
+
+export const restaurants: Restaurant[] = [
+  {
+    id: 'bun-rieu-ba-hoa',
+    name: 'Bún Riêu Cua Bà Hoa',
+    cuisine: 'Bún riêu · Món Việt',
+    categoryId: 'noodles',
+    imageUrl: bunRieuImage,
+    rating: 4.8,
+    reviewCount: 328,
+    deliveryMinutes: '20–30 phút',
+    deliveryFee: 0,
+    distance: '1.2 km',
+    promotion: 'Giảm 25%',
+    isFeatured: true,
+  },
+  {
+    id: 'ga-ran-seoul',
+    name: 'Gà Rán Seoul Kitchen',
+    cuisine: 'Gà rán · Hàn Quốc',
+    categoryId: 'chicken',
+    imageUrl: friedChickenImage,
+    rating: 4.7,
+    reviewCount: 256,
+    deliveryMinutes: '25–35 phút',
+    deliveryFee: 12000,
+    distance: '1.8 km',
+    promotion: 'Freeship',
+  },
+  {
+    id: 'tra-sua-may',
+    name: 'Trà Sữa Nhà Mây',
+    cuisine: 'Trà sữa · Trà trái cây',
+    categoryId: 'milk-tea',
+    imageUrl: milkTeaImage,
+    rating: 4.9,
+    reviewCount: 192,
+    deliveryMinutes: '15–25 phút',
+    deliveryFee: 8000,
+    distance: '0.9 km',
+    promotion: 'Mua 2 tặng 1',
+  },
+  {
+    id: 'com-nha-lan',
+    name: 'Cơm Nhà Lan',
+    cuisine: 'Cơm nhà · Món Việt',
+    categoryId: 'rice',
+    imageUrl: riceBowlImage,
+    rating: 4.6,
+    reviewCount: 143,
+    deliveryMinutes: '20–30 phút',
+    deliveryFee: 10000,
+    distance: '2.1 km',
+    promotion: 'Giảm 15%',
+  },
+  {
+    id: 'pizza-nha-lua',
+    name: 'Pizza Nhà Lửa',
+    cuisine: 'Pizza · Mì Ý',
+    categoryId: 'pizza',
+    imageUrl: pizzaImage,
+    rating: 4.8,
+    reviewCount: 211,
+    deliveryMinutes: '25–40 phút',
+    deliveryFee: 15000,
+    distance: '2.5 km',
+  },
+  {
+    id: 'cafe-bien-xanh',
+    name: 'Cà phê Biển Xanh',
+    cuisine: 'Cà phê · Bánh ngọt',
+    categoryId: 'coffee',
+    imageUrl: coffeeImage,
+    rating: 4.7,
+    reviewCount: 98,
+    deliveryMinutes: '15–25 phút',
+    deliveryFee: 0,
+    distance: '1.4 km',
+  },
+]
+
+export const popularFoods: PopularFood[] = [
+  {
+    id: 'bun-rieu-day-du',
+    name: 'Bún riêu đầy đủ',
+    restaurantId: 'bun-rieu-ba-hoa',
+    restaurantName: 'Bún Riêu Cua Bà Hoa',
+    imageUrl: bunRieuImage,
+    price: 49000,
+    originalPrice: 59000,
+    rating: 4.9,
+  },
+  {
+    id: 'ga-ran-sot-cay',
+    name: 'Gà rán sốt cay',
+    restaurantId: 'ga-ran-seoul',
+    restaurantName: 'Gà Rán Seoul Kitchen',
+    imageUrl: friedChickenImage,
+    price: 59000,
+    originalPrice: 69000,
+    rating: 4.8,
+  },
+  {
+    id: 'tra-sua-tran-chau',
+    name: 'Trà sữa trân châu',
+    restaurantId: 'tra-sua-may',
+    restaurantName: 'Trà Sữa Nhà Mây',
+    imageUrl: milkTeaImage,
+    price: 35000,
+    rating: 5.0,
+  },
+  {
+    id: 'com-ga-sot-mat-ong',
+    name: 'Cơm gà sốt mật ong',
+    restaurantId: 'com-nha-lan',
+    restaurantName: 'Cơm Nhà Lan',
+    imageUrl: riceBowlImage,
+    price: 55000,
+    originalPrice: 65000,
+    rating: 4.7,
+  },
+  {
+    id: 'pizza-pho-mai',
+    name: 'Pizza phô mai',
+    restaurantId: 'pizza-nha-lua',
+    restaurantName: 'Pizza Nhà Lửa',
+    imageUrl: pizzaImage,
+    price: 79000,
+    rating: 4.9,
+  },
+]
+
+export const homeFeed: HomeFeed = {
+  categories: foodCategories,
+  restaurants,
+  popularFoods,
+}

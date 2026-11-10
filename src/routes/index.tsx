@@ -32,7 +32,8 @@ import SupportPage from '../pages/customer/support/SupportPage'
 import WelcomePage from '../pages/customer/welcome/WelcomePage'
 
 export const router = createBrowserRouter([
-  { path: '/', element: <WelcomePage /> },
+  { path: '/', element: <HomePage /> },
+  { path: '/welcome', element: <WelcomePage /> },
   { path: '/login', element: <LoginPage /> },
   { path: '/register', element: <RegisterPage /> },
   { path: '/forgot-password', element: <ForgotPasswordPage /> },

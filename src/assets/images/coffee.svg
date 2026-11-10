@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="46" y1="26" x2="734" y2="417" gradientUnits="userSpaceOnUse"><stop stop-color="#E2F1EE"/><stop offset="1" stop-color="#C4DED7"/></linearGradient>
+    <linearGradient id="cup" x1="285" y1="137" x2="490" y2="352" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFDF6"/><stop offset="1" stop-color="#E6D6BE"/></linearGradient>
+    <linearGradient id="coffee" x1="335" y1="162" x2="444" y2="222" gradientUnits="userSpaceOnUse"><stop stop-color="#9B6641"/><stop offset="1" stop-color="#583A2D"/></linearGradient>
+    <filter id="shadow" x="231" y="91" width="345" height="375" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feGaussianBlur stdDeviation="18"/></filter>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h800v440H0z"/>
+  <circle cx="112" cy="91" r="52" fill="#FFF" fill-opacity=".45"/><circle cx="691" cy="349" r="84" fill="#8BAE86" fill-opacity=".25"/>
+  <ellipse cx="405" cy="375" fill="#354E48" fill-opacity=".18" rx="133" ry="38" filter="url(#shadow)"/>
+  <path fill="url(#cup)" d="M287 144h223l-23 234c-3 27-22 44-50 44h-78c-28 0-47-17-50-44l-22-234Z"/>
+  <path fill="url(#coffee)" d="m301 177 195 0-8 95H310l-9-95Z"/><ellipse cx="398" cy="177" fill="#D8B38A" rx="98" ry="24"/><ellipse cx="398" cy="178" fill="url(#coffee)" rx="82" ry="15"/>
+  <path fill="#F4E6D0" d="M484 200c54-21 82 10 65 50-13 30-45 43-81 31l4-22c27 11 48 3 56-15 8-19-5-29-39-16l-5-28Z"/>
+  <path stroke="#FFF8EC" stroke-linecap="round" stroke-width="9" d="m325 299 147-1"/>
+  <path stroke="#C39463" stroke-linecap="round" stroke-width="6" d="M355 218c11 10 11 20 0 30m43-30c11 10 11 20 0 30m43-30c11 10 11 20 0 30"/>
+  <circle cx="263" cy="249" r="17" fill="#FFF" fill-opacity=".44"/><circle cx="554" cy="136" r="12" fill="#FFF" fill-opacity=".58"/>
+</svg>
